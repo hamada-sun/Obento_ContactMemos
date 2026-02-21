@@ -17,6 +17,7 @@ return new class extends Migration
                 ->constrained('orders');
             $table->integer('rice_size_id')->notNull()->default(0);
             $table->integer('quantity')->notNull()->default(1);
+            $table->timestamps();
         });
     }
 

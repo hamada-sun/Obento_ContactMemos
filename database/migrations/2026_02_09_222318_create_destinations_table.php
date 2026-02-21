@@ -12,12 +12,14 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('destinations', function (Blueprint $table) {
-            $table->integer('id')->primary();
+            $table->id();
             $table->char('postal_code', 8)->nullable();
-            $table->char('prefecture', 1)->nullable();
-            $table->char('city', 1)->notNull();
-            $table->char('street_address', 1)->notNull();
-            $table->char('building_name', 1)->nullable();
+
+            $table->string('prefecture')->nullable();
+            $table->string('city')->notNull();
+            $table->string('street_address')->notNull();
+            $table->string('building_name')->nullable();
+
             $table->string('full_address', 255)->nullable();
             $table->boolean('is_billing_address')->notNull()->default(true);
             $table->decimal('latitude', 9, 6)->nullable();

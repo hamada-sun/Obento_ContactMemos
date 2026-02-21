@@ -12,7 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('daily_menus', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->id();
             $table->integer('bento_type_id')->notNull()->default(0);
             $table->char('dish_name',20)->notNull();
             $table->date('served_date')->notNull();
