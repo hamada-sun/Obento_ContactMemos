@@ -39,7 +39,7 @@ class OrderFactory extends Factory
             'buy_coupon_ticket' => $this->faker->boolean(5),
             'note' => $this->faker->optional()->text(100),
             'contact_person_id' => $contactPersonId, // 必須
-            'derivered' => $this->faker->optional()->dateTimeThisMonth(),
+            'delivered' => $this->faker->optional()->dateTimeThisMonth(),
             'is_paid' => $this->faker->boolean(70),
             'payment_method_id' => $this->faker->numberBetween(0, 2), // 0='現金'
             'is_discounted' => $this->faker->boolean(5),

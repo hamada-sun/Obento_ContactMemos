@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('staff_members', function (Blueprint $table) {
             $table->id();
             $table->char('name')->notNull();
-            $table->integer('role')->notNull();
+            $table->integer('role')->notNull()->default(0);
 
             $table->timestamps();
         });

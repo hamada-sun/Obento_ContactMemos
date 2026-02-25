@@ -21,7 +21,7 @@ class Order extends Model
         'contact_person_id',
 
         'payment_method_id',
-        'derivered',
+        'delivered',
         'deliverer_id'
     ];
 
@@ -54,8 +54,6 @@ class Order extends Model
     {
         return $this->belongsTo(StaffMember::class, 'deliverer_id');
     }
-
-
 
 
 

@@ -16,7 +16,6 @@ class StaffMember extends Model
         'role'
     ];
 
-
     public function contactOrder()
     {
         return $this->hasMany(Order::class, 'contact_person_id');

@@ -26,7 +26,6 @@ class Destination extends Model
         'is_billing_address' => 'boolean'
     ];
 
-
     public function customer()
     {
         return $this->hasMany(Customer::class, 'destination_id');

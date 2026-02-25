@@ -27,7 +27,7 @@ return new class extends Migration
             $table->text('note')->nullable();
             $table->foreignId('contact_person_id')->nullable()
                 ->constrained('staff_members');
-            $table->timestamp('derivered')->nullable();
+            $table->timestamp('delivered')->nullable();
             $table->boolean('is_paid')->notNull()->default(false);
             $table->integer('payment_method_id')->notNull()->default(0);
             $table->boolean('is_discounted')->notNull()->default(false);
