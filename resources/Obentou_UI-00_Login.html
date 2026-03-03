@@ -22,51 +22,24 @@
         <!-- 中央行は三列に分かれる -->
         <!-- ログイン時はログイン項目のみ。 -->
         <main class="flex flex-col grow items-center">
-            <form>
-            名前：<input>
-            <button>送信</button>
-            <br>
-            <br>
-
-            <label>label要素あり：<input></label>
-            <br>
-            label要素なし：<input>
-            </form>
-            <br>
-
-            <table border="1">
-                <tr>
-                    <td><label for="name">氏名</label></td>
-                    <td><input id="name"></td>
-                </tr>
-            </table>
-            <br>
-
-            <button type="submit">送信</button>
-            <button type="reset">クリア</button>
-            <button type="button">ボタン</button>
-            <br>
-
-
-
             <form action="#" class="p-4 text-center bg-gray-200">
                 <div>-ログインフォーム-</div>
-                <div>
+                <div class="flex flex-row">
                     <label for="test">名前</label>
-                    <div>
-                        <!-- [必須]アイコン -->
+                    <div class="bg-red-600">
+                        [必須]
                     </div>
                     <input type="text" name="test" required>
                 </div>
-                <div>
+                <div class="flex flex-row">
                     <label for="Pass">パスワード</label>
-                    <div>
-                        <!-- [必須]アイコン -->
+                    <div class="bg-red-600">
+                        [必須]
                     </div>
                     <input type="password" name="Pass" required>
                 </div>
                 <div>
-                    <button type="submit" value="Submit">Submit</button>
+                    <button type="submit" value="Submit" class="bg-green-400">ログイン</button>
                 </div>
             </form>
             <div class="p-4 text-center">ID、パスワードはシステム管理者にお問い合わせください。</div>

@@ -23,13 +23,12 @@
         <main class="flex flex-grow">
             <!-- R01Col_00:Navigation -->
             <!-- ナビゲーションカラム。選択中のパネルはハイライト。マウスオーバーでハイライトされる -->
-            <div class="w-1/4 bg-blue-100 p-4 border-r">
+            <nav class="w-1/4 bg-blue-100 p-4 border-r">
                 <h2 class="text-lg font-semibold mb-4 text-gray-700">メインメニュー</h2>
 
                 <!-- メニュー項目 -->
                 <nav class="space-y-1">
-                    <a href="#" class="flex items-center p-2 text-sm text-gray-700 hover:bg-gray-100 rounded-lg group transition duration-150">
-                <!--選択中Style　class="flex items-center p-2 text-sm   text-gray-700                   　　rounded-lg       transition duration-150 bg-gray-100  border border-gray-200" -->
+                    <a href="#" class="flex items-center p-2 text-sm text-gray-700 rounded-lg  transition duration-150 bg-gray-100  border border-gray-200">
                     注文履歴登録フォーム／確認画面
                     </a>
                 </nav>
@@ -40,7 +39,7 @@
 
                 <!-- メニュー項目例 (検討中) -->
                 <nav class="space-y-1">
-                    <a href="#" class="flex items-center p-2 text-sm text-gray-500 hover:bg-gray-100 rounded-lg group transition duration-150">
+                    <a href="./Obentou_UI-02_OrderHistory.html" class="flex items-center p-2 text-sm text-gray-500 hover:bg-gray-100 rounded-lg group transition duration-150">
                     注文履歴一覧画面
                     </a>
                     <a href="#" class="flex items-center p-2 text-sm text-gray-500 hover:bg-gray-100 rounded-lg group transition duration-150">
@@ -59,27 +58,31 @@
                 <p class="text-xs font-semibold text-gray-500 uppercase mb-2 -mt-3">―管理用―</p>
 
                 <!-- 管理者用メニュー -->
-                <a href="#" class="flex items-center p-2 text-sm text-gray-700 bg-gray-100 rounded-lg transition duration-150 border border-gray-200">
+                <a href="./Obentou_UI-99_AdminUserManage.html" class="flex items-center p-2 text-sm text-gray-700 hover:bg-gray-100 rounded-lg group transition duration-150">
                 管理者用メニュー
                 </a>
-            </div>
+            </nav>
 
             <!-- R01Col_01:Main Control Panel -->
             <!-- 基本的な操作部分。「管理者」以外は他のメニューを選ぶように促すメッセージ -->
             <div class="flex-1 bg-white p-4">
 
                 <!-- 画面タイトル -->
-                <h2 class="text-2xl font-bold mb-6 border-b pb-2 text-gray-800">ーユーザー管理画面ー</h2>
+                <h2 class="text-2xl font-bold mb-6 border-b pb-2 text-gray-800">注文履歴登録フォーム/確認画面</h2>
 
                 <!-- ユーザー一覧テーブル -->
                 <div class="w-full max-w-4xl mx-auto">
                     <table class="min-w-full border-collapse">
                         <thead>
+                        <!--  -->
                             <tr class="bg-gray-50 border-b border-t border-gray-300">
                                 <th class="p-2 text-left text-xs font-medium text-gray-500 uppercase w-12">No.</th>
-                                <th class="p-2 text-left text-xs font-medium text-gray-500 uppercase">入力担当者</th>
-                                <th class="p-2 text-left text-xs font-medium text-gray-500 uppercase">ID</th>
-                                <th class="p-2 text-left text-xs font-medium text-gray-500 uppercase">Pass</th>
+                                <th class="p-2 text-left text-xs font-medium text-gray-500 uppercase">お客様名</th>
+                                <th class="p-2 text-left text-xs font-medium text-gray-500 uppercase">ご飯の量</th>
+                                <th class="p-2 text-left text-xs font-medium text-gray-500 uppercase">配達場所</th>
+                                <th class="p-2 text-left text-xs font-medium text-gray-500 uppercase">支払い方法</th>
+                                <th class="p-2 text-left text-xs font-medium text-gray-500 uppercase">現金精算</th>
+                                <th class="p-2 text-left text-xs font-medium text-gray-500 uppercase">配達者</th>
                                 <th class="p-2 text-left text-xs font-medium text-gray-500 uppercase">備考</th>
                             </tr>
                         </thead>
@@ -118,7 +121,14 @@
             <!-- R01Col_02:Information -->
             <!--  -->
             <div class="w-1/4 bg-blue-100 p-4 border-l">
-                <h2 class="text-lg font-semibold mb-4 text-gray-700">インフォメーション</h2>
+                <h2 class="text-lg font-semibold mb-4 text-gray-700">注文票(電子版)_当日受注・支払状況一覧表</h2>
+
+                日付<div>2025/09/06</div>
+                総個数<div>0</div>
+                未払い個数<div>0</div>
+                支払い個数<div>0</div>
+                ×600=<div>0</div>
+                合計<div>0</div>
             </div>
         </main>
 
