@@ -24,3 +24,5 @@ Homestead.yaml
 Thumbs.db
 
 __Sources
+.env.core
+.env.design
