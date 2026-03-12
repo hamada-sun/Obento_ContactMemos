@@ -8,23 +8,203 @@
     <!-- 20260306ポートは確認して必要に応じて修正のこと。このディレクトリでは全てのページに以下の二行が必要 -->
     <script type="module" src="http://localhost:5173/@vite/client"></script>
     <link rel="stylesheet" href="http://localhost:5173/resources/css/app.css">
-
+    <link rel="stylesheet" href="./css/test.css">
 </head>
-<body>
+<body class="bg-gray-300">
+    <p class="bg-green-300">
+        Hello!! This is Temottio!! <br>
+        Still You need Cold Reload? <br>
+        Hello!! Hehehehehe  Tetetetetsatstesttstest<br>
+        Test<br>
+    </p>
 
-    Hello!! This is Temottio!! <br>
-    Still You need Cold Reload? <br>
-    Hello!! Hehehehehe  Tetetetetsatstesttstest<br>
-    Test
-    <br><br><br><br>
+    <p class="flex justify-center items-center gap-4">
+        <div>
+            <a href="./Obentou_UI-00_Login.html" class="text-blue-700">Login</a>
+            <a href="./Obentou_UI-01_Order&DeliverRecord.html" class="text-blue-700">Order</a>
+            <a href="./Obentou_UI-02_OrderHistory.html" class="text-blue-700">History</a>
+            <a href="./Obentou_UI-99_AdminUserManage.html" class="text-blue-700">Admin</a>
+            <a href="./Modal.html" class="text-blue-700">Modal</a>
+        </div>
 
-    <a href="./Obentou_UI-00_Login.html" class="text-blue-700">Login</a>
-    <a href="./Obentou_UI-01_Order&DeliverRecord.html" class="text-blue-700">Order</a>
-    <a href="./Obentou_UI-02_OrderHistory.html" class="text-blue-700">History</a>
-    <a href="./Obentou_UI-99_AdminUserManage.html" class="text-blue-700">Admin</a>
-    <a href="./Modal.html" class="text-blue-700">Modal</a>
+        <div>
+            Test
+        </div>
+
+        <div>
+            Test
+        </div>
+    </p>
+
+    <p>
+        <div> &copy; 2024 MINT Corporation.</div>
+    </p>
+
+    <ol>
+    <li>
+      <h2>横4 × 縦4</h2>
+      <ul class="box_00">
+        <li>00</li>
+        <li>01</li>
+        <li>02</li>
+        <li>03</li>
+        <li>04</li>
+        <li>05</li>
+        <li>06</li>
+        <li>07</li>
+        <li>08</li>
+        <li>09</li>
+        <li>10</li>
+        <li>11</li>
+        <li>12</li>
+        <li>13</li>
+        <li>14</li>
+        <li>15</li>
+      </ul>
+      <hr>
+    </li>
+
+    <li>
+      <h2>横2 × 縦2</h2>
+      <ul class="box_01">
+        <li>00</li>
+        <li>01</li>
+        <li>02</li>
+        <li>03</li>
+      </ul>
+      <hr>
+    </li>
+
+    <li>
+      <h2>横6 × 縦1</h2>
+      <ul class="box_02">
+        <li>00</li>
+        <li>01</li>
+        <li>02</li>
+        <li>03</li>
+        <li>04</li>
+        <li>05</li>
+      </ul>
+      <hr>
+    </li>
+  </ol>
 
 
+    <ol class="space-y-8"> <!-- olタグにはリストスタイルのリセットと縦のスペースを追加 -->
+    <li>
+      <h2 class="text-xl font-bold mb-4">横4 × 縦4</h2>
+      <ul class="mx-auto w-[85%] rounded-lg border-none
+                 bg-[repeating-linear-gradient(125deg,#c2a8cc,#c2a8cc_3px,#5a41ff_7px,#5a41ff_10px)]
+                 flex flex-wrap gap-1.25"> <!-- box_00のスタイルを適用 (背景は任意値) -->
+        <li class="flex-1 min-w-[20%] border-2 border-blue-400 h-[100px] rounded-lg bg-blue-500/50 text-center p-8">00</li> <!-- padding 35px -> p-8 (32px) or p-9 (36px) などに調整。ここではp-8を採用 -->
+        <li class="flex-1 min-w-[20%] border-2 border-blue-400 h-[100px] rounded-lg bg-blue-500/50 text-center p-8">01</li>
+        <li class="flex-1 min-w-[20%] border-2 border-blue-400 h-[100px] rounded-lg bg-blue-500/50 text-center p-8">02</li>
+        <li class="flex-1 min-w-[20%] border-2 border-blue-400 h-[100px] rounded-lg bg-blue-500/50 text-center p-8">03</li>
+        <li class="flex-1 min-w-[20%] border-2 border-blue-400 h-[100px] rounded-lg bg-blue-500/50 text-center p-8">04</li>
+        <li class="flex-1 min-w-[20%] border-2 border-blue-400 h-[100px] rounded-lg bg-blue-500/50 text-center p-8">05</li>
+        <li class="flex-1 min-w-[20%] border-2 border-blue-400 h-[100px] rounded-lg bg-blue-500/50 text-center p-8">06</li>
+        <li class="flex-1 min-w-[20%] border-2 border-blue-400 h-[100px] rounded-lg bg-blue-500/50 text-center p-8">07</li>
+        <li class="flex-1 min-w-[20%] border-2 border-blue-400 h-[100px] rounded-lg bg-blue-500/50 text-center p-8">08</li>
+        <li class="flex-1 min-w-[20%] border-2 border-blue-400 h-[100px] rounded-lg bg-blue-500/50 text-center p-8">09</li>
+        <li class="flex-1 min-w-[20%] border-2 border-blue-400 h-[100px] rounded-lg bg-blue-500/50 text-center p-8">10</li>
+        <li class="flex-1 min-w-[20%] border-2 border-blue-400 h-[100px] rounded-lg bg-blue-500/50 text-center p-8">11</li>
+        <li class="flex-1 min-w-[20%] border-2 border-blue-400 h-[100px] rounded-lg bg-blue-500/50 text-center p-8">12</li>
+        <li class="flex-1 min-w-[20%] border-2 border-blue-400 h-[100px] rounded-lg bg-blue-500/50 text-center p-8">13</li>
+        <li class="flex-1 min-w-[20%] border-2 border-blue-400 h-[100px] rounded-lg bg-blue-500/50 text-center p-8">14</li>
+        <li class="flex-1 min-w-[20%] border-2 border-blue-400 h-[100px] rounded-lg bg-blue-500/50 text-center p-8">15</li>
+      </ul>
+      <hr class="my-4 border-t border-gray-700">
+    </li>
 
+    <li>
+      <h2 class="text-xl font-bold mb-4">横2 × 縦2</h2>
+      <ul class="mx-auto w-[85%] rounded-lg border-none
+                 bg-[repeating-linear-gradient(125deg,#c2a8cc,#c2a8cc_3px,#5a41ff_7px,#5a41ff_10px)]
+                 flex flex-wrap gap-2.5"> <!-- gap: 10px -> gap-2.5 (10px) -->
+        <li class="flex-1 min-w-[40%] border-2 border-blue-400 h-[100px] rounded-lg bg-blue-500/50 text-center p-8">00</li>
+        <li class="flex-1 min-w-[40%] border-2 border-blue-400 h-[100px] rounded-lg bg-blue-500/50 text-center p-8">01</li>
+        <li class="flex-1 min-w-[40%] border-2 border-blue-400 h-[100px] rounded-lg bg-blue-500/50 text-center p-8">02</li>
+        <li class="flex-1 min-w-[40%] border-2 border-blue-400 h-[100px] rounded-lg bg-blue-500/50 text-center p-8">03</li>
+      </ul>
+      <hr class="my-4 border-t border-gray-700">
+    </li>
+
+    <li>
+      <h2 class="text-xl font-bold mb-4">横6 × 縦1</h2>
+      <ul class="mx-auto w-[85%] rounded-lg border-none
+                 bg-[repeating-linear-gradient(125deg,#c2a8cc,#c2a8cc_3px,#5a41ff_7px,#5a41ff_10px)]
+                 flex flex-wrap gap-2.5"> <!-- gap: 10px -> gap-2.5 (10px) -->
+        <li class="flex-1 min-w-[15.5%] border-2 border-blue-400 h-[100px] rounded-lg bg-blue-400/80 text-center p-8">00</li> <!-- 背景色を調整 -->
+        <li class="flex-1 min-w-[15.5%] border-2 border-blue-400 h-[100px] rounded-lg bg-blue-400/80 text-center p-8">01</li>
+        <li class="flex-1 min-w-[15.5%] border-2 border-blue-400 h-[100px] rounded-lg bg-blue-400/80 text-center p-8">02</li>
+        <li class="flex-1 min-w-[15.5%] border-2 border-blue-400 h-[100px] rounded-lg bg-blue-400/80 text-center p-8">03</li>
+        <li class="flex-1 min-w-[15.5%] border-2 border-blue-400 h-[100px] rounded-lg bg-blue-400/80 text-center p-8">04</li>
+        <li class="flex-1 min-w-[15.5%] border-2 border-blue-400 h-[100px] rounded-lg bg-blue-400/80 text-center p-8">05</li>
+      </ul>
+      <hr class="my-4 border-t border-gray-700">
+    </li>
+  </ol>
+
+
+  <div class="/* *の基本スタイルによる影響を想定 */">
+  <ol class="space-y-8 /* olの縦マージン */">
+    <li>
+      <h2 class="/* h2のスタイルは除外 */">横4 × 縦4</h2>
+      <!-- box_00: mx-auto, w-[85%], rounded-lg, flex, flex-wrap, gap-1.25 -->
+      <ul class="mx-auto w-[85%] rounded-lg border-none flex flex-wrap gap-1.25">
+        <!-- li: flex-1, min-w-[20%], h-[100px], p-8 (パディングはサイズ関連と見なす) -->
+        <li class="flex-1 min-w-[20%] h-[100px] p-8">00</li>
+        <li class="flex-1 min-w-[20%] h-[100px] p-8">01</li>
+        <li class="flex-1 min-w-[20%] h-[100px] p-8">02</li>
+        <li class="flex-1 min-w-[20%] h-[100px] p-8">03</li>
+        <li class="flex-1 min-w-[20%] h-[100px] p-8">04</li>
+        <li class="flex-1 min-w-[20%] h-[100px] p-8">05</li>
+        <li class="flex-1 min-w-[20%] h-[100px] p-8">06</li>
+        <li class="flex-1 min-w-[20%] h-[100px] p-8">07</li>
+        <li class="flex-1 min-w-[20%] h-[100px] p-8">08</li>
+        <li class="flex-1 min-w-[20%] h-[100px] p-8">09</li>
+        <li class="flex-1 min-w-[20%] h-[100px] p-8">10</li>
+        <li class="flex-1 min-w-[20%] h-[100px] p-8">11</li>
+        <li class="flex-1 min-w-[20%] h-[100px] p-8">12</li>
+        <li class="flex-1 min-w-[20%] h-[100px] p-8">13</li>
+        <li class="flex-1 min-w-[20%] h-[100px] p-8">14</li>
+        <li class="flex-1 min-w-[20%] h-[100px] p-8">15</li>
+      </ul>
+      <hr class="my-4 border-t border-gray-700">
+    </li>
+
+    <li>
+      <h2 class="/* h2のスタイルは除外 */">横2 × 縦2</h2>
+      <!-- box_01: mx-auto, w-[85%], rounded-lg, flex, flex-wrap, gap-2.5 -->
+      <ul class="mx-auto w-[85%] rounded-lg border-none flex flex-wrap gap-2.5">
+        <!-- li: flex-1, min-w-[40%], h-[100px], p-8 -->
+        <li class="flex-1 min-w-[40%] h-[100px] p-8">00</li>
+        <li class="flex-1 min-w-[40%] h-[100px] p-8">01</li>
+        <li class="flex-1 min-w-[40%] h-[100px] p-8">02</li>
+        <li class="flex-1 min-w-[40%] h-[100px] p-8">03</li>
+      </ul>
+      <hr class="my-4 border-t border-gray-700">
+    </li>
+
+    <li>
+      <h2 class="/* h2のスタイルは除外 */">横6 × 縦1</h2>
+      <!-- box_02: mx-auto, w-[85%], rounded-lg, flex, flex-wrap, gap-2.5 -->
+      <ul class="mx-auto w-[85%] rounded-lg border-none flex flex-wrap gap-2.5">
+        <!-- li: flex-1, min-w-[15.5%], h-[100px], p-8 -->
+        <li class="flex-1 min-w-[15.5%] h-[100px] p-8">00</li>
+        <li class="flex-1 min-w-[15.5%] h-[100px] p-8">01</li>
+        <li class="flex-1 min-w-[15.5%] h-[100px] p-8">02</li>
+        <li class="flex-1 min-w-[15.5%] h-[100px] p-8">03</li>
+        <li class="flex-1 min-w-[15.5%] h-[100px] p-8">04</li>
+        <li class="flex-1 min-w-[15.5%] h-[100px] p-8">05</li>
+      </ul>
+      <hr class="my-4 border-t border-gray-700">
+    </li>
+  </ol>
+
+  <script src="#"></script>
+</div>
+
+    <script src="./js/test.js"></script>
 </body>
 </html>
